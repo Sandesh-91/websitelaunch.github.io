@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", serif;
+}
+body{
+height: 100vh;
+width: 100vw;
+
+/* overflow: hidden; */
+}
+.container{
+height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    gap: 60px;
+    background-image: url('./justme-Photoroom\(1\).png');
+    background-repeat: no-repeat;
+    background-position:  bottom right;
+    background-size: contain;
+    z-index: -1;
+    padding:  30px 60px;
+    box-sizing: border-box;
+}
+.firstwrapper{
+    min-height: 42px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.name{
+width: 10%;
+    font-size: 1.3rem;  
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    box-sizing: border-box;
+}
+.colorchg{
+    color: blueviolet;
+}
+.colorname{
+    color: blueviolet;
+}
+.flex{
+    height: 100%;
+    width:80% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding:  0 5px;
+    justify-content: center;
+}
+.list li{
+    list-style: none;
+}
+.list a{
+    text-decoration: none;
+    color: black;
+}
+.list a:hover{
+    border-bottom: 4px solid blueviolet;
+    transition: .2s to right;
+    color: blueviolet;
+}
+.topbtn{
+    height: 100%;
+    width: 150px;
+    
+}
+.topbtn >button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: blueviolet;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+.main{
+    height: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.column1{
+    height: 400px;
+    width: 50%;
+    display: flex;
+    flex-direction:column ;
+    gap: 12px;
+    padding: 55px 0;
+}
+.header{
+    height: 64px;
+    width: 100%;
+    /* letter-spacing: 1px; */
+    font-size: 24px;
+    display: flex;
+   
+
+}
+#word{
+    animation: display  5s linear forwards;
+  
+    /* display: none;
+     */
+     opacity: 0;
+}
+
+
+#word:nth-child(1){
+    animation-delay: 0s;
+}
+#word:nth-child(2){
+    animation-delay: 1s;
+}
+#word:nth-child(3){
+    animation-delay: 2s;
+}
+@keyframes display{
+0%{
+    opacity: 0;
+    visibility: hidden;
+}
+
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.hero{
+    height: 38px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.descri{
+    height: 120px;
+    width: 100%;
+}
+.descri p{
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+    word-spacing: 1px;
+    font-size: 1.3rem;
+    padding-right: 35px;
+    box-sizing: border-box;
+    /* background-color: blue; */
+    display: flex;
+    /* align-items: center; */
+}
+.btnwrapper{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    gap: 17px;
+    /* justify-content: center; */
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+.btnwrapper >#hirebtn{
+border: none;
+outline: none;
+color: white;
+background-color: blueviolet;
+height: 100%;
+width: 120px;
+border-radius: 10px;
+font-size: 1rem;
+cursor: pointer;
+
+
+
+
+}
+#hirebtn:hover{
+    transform: translateY(-2px);
+    color: red;
+}
+
+.btnwrapper >#seeprojectsbtn{
+border: 2px solid blueviolet;
+outline: none;
+color: blueviolet;
+background-color: white;
+height: 100%;
+width: 130px;
+border-radius: 10px;
+font-size: 1rem;
+cursor: pointer;
+
+}
+footer{
+    display: flex;
+    gap: 1.3rem;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+footer i{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+
+}
+.icons{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1px;
+    border: 2px solid blueviolet;
+}
+.insideicon{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
